@@ -1,1 +1,6 @@
-/nbproject/private/
+.DS_Store
+*.pyc
+.svn
+nbproject
+Thumbs.db
+Desktop.ini
