@@ -65,13 +65,13 @@ var schedule = function() {
 	var kill = 0;
 	jQuery.each(data, function(i, value) {
 		var that = jQuery(this);
-		var countdown = that.data("airtime") + that.data("duration");
+		var countdown = that.data("unixtime");
 
 		var key = jQuery("#p" + that.data("id") + " td:first-child");
 			key.attr("class", colorize(countdown - current));
 
 		if (key.hasClass('key-00')) {
-			if ((countdown - current) <= 0) {
+			if ((countdown - current + that.data("duration")) <= 0) {
 				jQuery("#p" + that.data("id")).remove();
 				kill++;
 			}
