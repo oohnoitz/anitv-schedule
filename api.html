@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AniTV Schedule</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap-app.css" />
+
+		<!-- JS -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/clock.js"></script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<a class="brand" href="#">AniTV</a>
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="api.html" data-view="api">API</a></li>
+						<li><a href="manage.html" data-view="manage">Manage</a></li>
+						<li><a href="history.html" data-view="history">History</a></li>
+					</ul>
+					<p class="pull-right" id="clock"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="content" id="view">
+				<div class="page-header">
+					<h1>API <small>create and innovate ideas</small></h1>
+				</div>
+				<div class="row">
+					<div class="text">
+						<h3>Documentation</h3>
+						<div class="text">
+							<h4>List N Shows via JSON</h4>
+							<dl>
+								<dt>Syntax</dt>
+								<dd>
+									GET <a href="json.php?controller=schedule">/anitv/json.php?controller=schedule</a><br/>
+									GET <a href="json.php?controller=schedule&total=500">/anitv/json.php?controller=schedule&amp;total=&lt;number&gt;</a>
+								</dd>
+
+								<dt>Description</dt>
+								<dd>
+									This call will output the same schedule displayed on the index. The variable &lt;number&gt; in the second call is the total amount of items returned.
+								</dd>
+							</dl>
+
+							<h4>Query/Search via JSON</h4>
+							<dl>
+								<dt>Syntax</dt>
+								<dd>
+									GET <a href="json.php?controller=search&query=bakuman">/anitv/json.php?controller=search&amp;query=&lt;string&gt;</a>
+								</dd>
+
+								<dt>Description</dt>
+								<dd>
+									The variable &lt;string&gt; must be replaced with the string that will be queried for results. All characters are allowed and the wildcard character is an asterik (*).
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<p>&COPY; TEAM SEPTiCORE 2011</p>
+			</footer>
+		</div>
+	</body>
+</html>

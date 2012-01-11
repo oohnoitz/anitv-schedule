@@ -65,3 +65,5 @@ table#schedule > tbody > tr > td:nth-child(2) {
 .key-03 { background-color: #FFC040 !important; }
 .key-01 { background-color: #FFAA00 !important; }
 .key-00 { background-color: #6BCF51 !important; }
+
+#clock { color: #FFF; }

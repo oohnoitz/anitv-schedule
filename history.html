@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AniTV Schedule</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap-app.css" />
+
+		<!-- JS -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.localize.js"></script>
+		<script type="text/javascript" src="assets/js/anitv-history.js"></script>
+		<script type="text/javascript" src="assets/js/clock.js"></script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<a class="brand" href="#">AniTV</a>
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="api.html" data-view="api">API</a></li>
+						<li><a href="manage.html" data-view="manage">Manage</a></li>
+						<li class="active"><a href="history.html" data-view="history">History</a></li>
+					</ul>
+					<p class="pull-right" id="clock"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="content" id="view">
+				<div class="page-header">
+					<h1>History <small>logs of changes and modifications</small></h1>
+				</div>
+				<div class="row">
+					<table class="zebra-striped" id="history">
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Show</th>
+								<th>Modification</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+
+			<footer>
+				<p>&COPY; TEAM SEPTiCORE 2011</p>
+			</footer>
+		</div>
+	</body>
+</html>

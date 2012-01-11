@@ -1,7 +1,7 @@
 <?php
 
 // MySQL Database Information
-define("MYSQL_HOST", "");
-define("MYSQL_USER", "");
-define("MYSQL_PASS", "");
-define("MYSQL_NAME", "");
+define("MYSQL_HOST", "localhost");
+define("MYSQL_USER", "anitv");
+define("MYSQL_PASS", "anitv");
+define("MYSQL_NAME", "anitv");
