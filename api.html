@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>AniTV Schedule</title>
+		<title>AniTV Schedule - API</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 		<!--[if lt IE 9]>
@@ -20,7 +20,7 @@
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
-					<a class="brand" href="#">AniTV</a>
+					<a class="brand" href="#">AniTV Schedule</a>
 					<ul class="nav">
 						<li><a href="index.html">Home</a></li>
 						<li class="active"><a href="api.html" data-view="api">API</a></li>
@@ -45,13 +45,15 @@
 							<dl>
 								<dt>Syntax</dt>
 								<dd>
-									GET <a href="json.php?controller=schedule">/anitv/json.php?controller=schedule</a><br/>
-									GET <a href="json.php?controller=schedule&total=500">/anitv/json.php?controller=schedule&amp;total=&lt;number&gt;</a>
+									GET <a href="json.php?controller=schedule">/json.php?controller=schedule</a><br/>
+									GET <a href="json.php?controller=schedule&total=500">/json.php?controller=schedule&amp;total=&lt;number&gt;</a><br/>
+									GET <a href="json.php?controller=schedule&total=500&nowplaying=false">/json.php?controller=schedule&amp;total=&lt;number&gt;&amp;nowplaying=&lt;boolean&gt;</a>
 								</dd>
 
 								<dt>Description</dt>
 								<dd>
-									This call will output the same schedule displayed on the index. The variable &lt;number&gt; in the second call is the total amount of items returned.
+									This call will output the same schedule displayed on the index. The variable &lt;number&gt; in the second call is the total amount of items returned.<br/>
+									The variable &lt;boolean&gt; when used must be either TRUE or FALSE. This determines whether or not to display programs that are currently on the air.
 								</dd>
 							</dl>
 
@@ -59,7 +61,7 @@
 							<dl>
 								<dt>Syntax</dt>
 								<dd>
-									GET <a href="json.php?controller=search&query=bakuman">/anitv/json.php?controller=search&amp;query=&lt;string&gt;</a>
+									GET <a href="json.php?controller=search&query=bakuman">/json.php?controller=search&amp;query=&lt;string&gt;</a>
 								</dd>
 
 								<dt>Description</dt>
@@ -73,7 +75,7 @@
 			</div>
 
 			<footer>
-				<p>&COPY; TEAM SEPTiCORE 2011</p>
+				<p>AniTV Schedule 0.2.0 &COPY; TEAM SEPTiCORE 2011</p>
 			</footer>
 		</div>
 	</body>
