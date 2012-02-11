@@ -305,7 +305,7 @@ class AniTV {
 			AND
 				UNIX_TIMESTAMP(`program`.`EdTime`) > " . time() . "
 			ORDER BY `program`.`StTime`, `program`.`EdTime` ASC
-			LIMIT " . (50 - $limit) . ", " . $limit . "
+			LIMIT 50, " . $limit . "
 		");
 
 		if ($stream->num_rows)
