@@ -28,6 +28,8 @@ ON *:TEXT:.anitv*:#: {
       var %output = %output 0- 12 $+ http://anidb.net/a $+ $json(%url,%idx,%row,anidb)
     }
 
+    msg $chan %output
+
     inc %row
   }
 }
